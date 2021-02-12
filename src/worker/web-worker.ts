@@ -24,6 +24,7 @@ import {
     EMAIL,
     ID_TOKEN,
     PKCE_CODE_VERIFIER,
+    REFRESH_TOKEN,
     SCOPE,
     SESSION_STATE,
     SIGNED_IN,
@@ -155,7 +156,7 @@ export const WebWorker: WebWorkerSingletonInterface = ((): WebWorkerSingletonInt
      * @returns {Promise<boolean>} A promise that resolves with `true` if refreshing is successful.
      */
     const refreshAccessToken = (): Promise<boolean> => {
-        return sendRefreshTokenRequestUtil(authConfig, session.get(ACCESS_TOKEN));
+        return sendRefreshTokenRequestUtil(authConfig, session.get(REFRESH_TOKEN));
     };
 
     /**
