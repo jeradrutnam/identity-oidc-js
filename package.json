@@ -1,6 +1,6 @@
 {
     "name": "@wso2/identity-oidc-js",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Authentication module for WSO2 Identity Server",
     "keywords": [
         "Wso2",
